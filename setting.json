@@ -6,40 +6,38 @@
     "logo_img": "./img/icon/avatar.jpg",
     "logo_text_1": "wuhobin",
     "logo_text_2": "top",
-    "github": "wuhobin",
-    "qq": "1289066006",
-    "email": "1289066006@qq.com",
-    "bilibili": "495003013",
-    "facebook": "bottom_user",
+    "github": "lcx1029",
+    "email": "lcx1029lcx1029@dingtalk.com",
+    "bilibili": "662154608",
     "link_1": [
-        "http://blog.wuhobin.top/",
+        "https://www.bilibili.com",
         "fa-solid fa-blog",
-        "博客"
+        "B站"
     ],
     "link_2": [
-        "https://tongji.baidu.com/",
+        "./weather/indexw.html",
         "fa-solid fa-cloud",
-        "统计"
+        "天气"
     ],
     "link_3": [
-        "http://www.wuhobin.top/",
+        "./music/indexm.html",
+        "fa-solid fa-music",
+        "音乐"
+    ],
+    "link_4": [
+        "#",
         "fa-solid fa-compass",
         "起始页"
     ],
-    "link_4": [
-        "https://codenote.wuhobin.top",
-        "fa-solid fa-book-bookmark",
-        "编程宝典"
-    ],
     "link_5": [
-        "http://www.wuhobin.top/",
-        "fa-solid fa-flask",
-        "开发中..."
+        "./URL-sets/indexu.html",
+        "fa-solid fa-book-bookmark",
+        "网址集"
     ],
     "link_6": [
-        "http://www.wuhobin.top/",
+        "https://miku.sci-fifans.net/",
         "fa-solid fa-flask",
-        "敬请期待..."
+        "Mikutap"
     ],
     "Copyright_text": "Aurora",
     "beian": "鄂ICP备20006685号"
