@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>复制cookie脚本</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #def9f9;
+        }
+        
+        .prompt-container {
+            position: relative;
+            width: 300px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .prompt-container button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        
+        .prompt-container button:hover {
+            background-color: #0056b3;
+        }
+        
+        .prompt-container .message {
+            margin-bottom: 10px;
+        }
+        
+        .prompt-container .success {
+            color: green;
+        }
+        
+        .prompt-container .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="prompt-container">
+        <p class="message">点击按钮后将会复制一串文本，你需要任意新建一个收藏网址，将URL替换为复制内容，接着到Bing官网点击网站快捷方式即可获取cookie。</p>
+        <button id="copyButton">复制文本</button>
+        <p id="statusMessage"></p>
+    </div>
+
+    <script>
+        document.getElementById('copyButton').addEventListener('click', async function() {
+            try {
+                // 定义要复制的文本
+                const textToCopy = '这是要复制的文本';
+
+                // 使用 navigator.clipboard.writeText() 复制文本
+                await navigator.clipboard.writeText(textToCopy);
+
+                // 更新状态消息
+                document.getElementById('statusMessage').textContent = '已复制到剪贴板!';
+                document.getElementById('statusMessage').classList.add('success');
+            } catch (error) {
+                console.error('复制文本时发生错误:', error);
+                document.getElementById('statusMessage').textContent = '复制失败，请重试。';
+                document.getElementById('statusMessage').classList.add('error');
+            }
+        });
+    </script>
+</body>
+</html>
