@@ -1,3 +1,11 @@
+<!--
+ * @Author: l cx lcx1029lcx1029@outlook.com
+ * @Date: 2024-08-17 15:02:49
+ * @LastEditors: l cx lcx1029lcx1029@outlook.com
+ * @LastEditTime: 2024-08-18 13:30:48
+ * @FilePath: \undefinedc:\Users\LEE_S\Desktop\cx\cookie.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -66,7 +74,7 @@
         document.getElementById('copyButton').addEventListener('click', async function() {
             try {
                 // 定义要复制的文本
-                const textToCopy = '这是要复制的文本';
+                const textToCopy = "javascript: (function() {var value = document.cookie.split('; ').find(row => row.startsWith('_U=')).split('=')[1];prompt('Copy to clipboard: Ctrl+C, Enter', value);})();";
 
                 // 使用 navigator.clipboard.writeText() 复制文本
                 await navigator.clipboard.writeText(textToCopy);
