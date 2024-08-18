@@ -1,0 +1,55 @@
+<!--
+ * @Author: l cx lcx1029lcx1029@outlook.com
+ * @Date: 2024-08-17 15:10:42
+ * @LastEditors: l cx lcx1029lcx1029@outlook.com
+ * @LastEditTime: 2024-08-18 13:14:43
+ * @FilePath: \undefinedc:\Users\LEE_S\Desktop\11.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>彩蛋</title>
+    <style>
+        /* CSS 样式 */
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(73, 94, 99);
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop>
+        <source src="video.mp4" type="video/mp4">
+        <!-- 如果需要支持不同格式的视频文件，可以添加多个 source 标签 -->
+        <!-- <source src="path/to/your/video.webm" type="video/webm"> -->
+        您的浏览器不支持 video 标签。
+    </video>
+    
+    <div class="content">
+    </div>
+</body>
+</html>
