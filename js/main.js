@@ -416,7 +416,7 @@ let title2 = `版权不归CX
   　　　┃ 　　　　　　　┏┛
   　　　┗┓┓┏━┳┓┏┛ + + + +
   　　　　┃┫┫　┃┫┫
-  　　　　┗┻┛　┗┻┛+ + + +               
+  　　　　┗┻┛　┗┻┛+ + + +           
 `
 let content = `
 原作者：https://github.com/wuhobin
